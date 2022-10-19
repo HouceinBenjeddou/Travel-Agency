@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+:root {
+    --body-color: #fff;
+    --header-height: 1.5em;
+    --text-color: #212832;
+}
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* HEADER */
+.container {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--body-color);
+} 
+.nav{
+    max-width: 1160px;
+    height: var(--header-height);
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    position: relative;
+    left: 5px;
+}
+
+
+.nav_list {
+  position: relative;
+  display: inline-flex;
+}
+
+.nav_item {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.nav_item a{
+    font-weight: 300;
+    color: #212832;
+    margin: 0px 35px;
+}
+
+.nav_item a:hover{
+    color: rgb(247, 153, 52);
+    transition: all .2s;
+}
+
+.nav_item button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color:#212832;
+    border: 1.2px solid #212832;
+    background-color: var(--body-color);
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav_item button:hover{
+    background-color: rgb(247, 153, 52);;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    border-color: rgb(247, 153, 52);
+}
+
+.container {
+    max-width: 100%;
+}
+
+.container .travaller{
+    position: relative;
+    height: 650px;
+    width: 650px;
+}
+
+.container .hero-img {
+    position: relative;
+    left: 700px;
+    width: 700px;
+    height: 700px;
+    z-index: 1;
+}
+.decore {
+    position: relative;
+    z-index: -1;
+    height: 650px;
+    width: 650px;
+    top: -900px;
+    right: -350px;
+}
+
+.plane {
+    position: absolute;
+    top: 150px;
+    right: 650px;
+    width: 120px;
+    height: 100px;
+}
+
+.second-plane {
+    position: absolute;
+    top: 200px;
+    right: -1px;
+    width: 100px;
+}
+
+.showcase {
+    position: absolute;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    max-width: 700px;
+    padding: 30px;
+    gap: 2.5em;
+    top: 125px;
+    left: 100px;
+    margin: 10px 25px;
+}
+
+.showcase h3{
+    text-transform: uppercase;
+    color: rgb(235, 78, 35);
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.showcase h1 {
+    max-width: 500px;
+    font-size: 4.1em;
+    color: rgb(5, 5, 70);
+    font-weight: 600;
+    
+}
+
+.showcase h1 span {
+    text-decoration-color: rgb(235, 138, 35);
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: wavy;
+    
+}   
+
+
+.showcase p{
+    font-size: 1rem;
+    max-width: 500px;
+    font-weight: 400;
+    margin-top: 15px;
+    line-height: 1.8;
+    color: rgba(32, 32, 53, 0.7);
+}
+
+.showcase button{
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    margin: 10px 0;
+    letter-spacing: .5px;
+    box-shadow: 0px 6px 15px rgba(235, 138, 35, 0.2);
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(255, 145, 0);
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+
+.showcase button:hover {
+    background-color: rgb(247, 153, 52);;
+    color: #fff;
+    transform: translateY(-4px);
+  }
